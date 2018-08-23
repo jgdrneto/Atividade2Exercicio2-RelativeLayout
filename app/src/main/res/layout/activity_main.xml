@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome: "
+        android:layout_alignBaseline="@+id/editText_nome"/>
+
+    <EditText
+        android:id="@+id/editText_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView_nome"
+        android:layout_toLeftOf="@+id/textView_idade"
+        android:layout_alignBaseline="@id/editText_nome"/>
+    <TextView
+        android:id="@+id/textView_idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade: "
+        android:layout_toLeftOf="@+id/editText_idade"
+        android:layout_alignBaseline="@id/editText_nome"/>
+    <EditText
+        android:id="@+id/editText_idade"
+        android:inputType="number"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/textView_nome_pai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Pai: "
+        android:layout_below="@+id/editText_nome"
+        android:layout_alignBaseline="@+id/editText_nome_pai"
+        />
+    <EditText
+        android:id="@+id/editText_nome_pai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText_nome"
+        android:layout_toRightOf="@id/textView_nome_pai"
+        />
+    <TextView
+        android:id="@+id/textView_nome_mae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Mãe: "
+        android:layout_below="@+id/editText_nome_pai"
+        android:layout_alignBaseline="@+id/editText_nome_mae"
+        />
+    <EditText
+        android:id="@+id/editText_nome_mae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText_nome_pai"
+        android:layout_toRightOf="@id/textView_nome_mae"
+        />
+    <TextView
+        android:id="@+id/textView_rua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rua: "
+        android:layout_below="@+id/editText_nome_mae"
+        android:layout_alignBaseline="@+id/editText_rua"/>
+    <EditText
+        android:id="@+id/editText_rua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView_rua"
+        android:layout_toLeftOf="@id/textView_numero"
+        android:layout_below="@+id/editText_nome_mae"
+        />
+    <TextView
+        android:id="@+id/textView_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número : "
+        android:layout_below="@+id/editText_nome_mae"
+        android:layout_toLeftOf="@+id/editText_numero"
+        android:layout_alignBaseline="@id/editText_rua"
+        />
+    <EditText
+        android:id="@+id/editText_numero"
+        android:inputType="number"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_nome_mae"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
